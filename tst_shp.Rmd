@@ -1,0 +1,22 @@
+---
+title: "Reprex for read_sf@Shinyapps.io"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(sf)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+plot(read_sf("./br/BRUFE250GC_SIR.shp"))
+```
+
